@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    // background: rgb(219, 234, 236)
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    position: absolute;
+    justify-content: center;
+    justify-items: center;
+    perspective: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    nav {
+        height: 100px;
+        width: 100vw;
+        background: black;
+        display: flex;
+        box-shadow: 0 0 10px;
+        position: sticky;
+        top: -20px;
+        z-index: 1;
+        .menu {
+            color: wheat;
+            right: 0;
+            position: absolute;
+            align-self: center;
+            display: grid;
+            grid-template-columns: repeat(3, 70px);
+            margin-right: 10px;
+            font-family: "Zen Dots", cursive;
+            font-size: 10px;
+            grid-gap: 100px;
+        }
+    }
+    // .ham {
+    //     position: absolute;
+    //     color: red;
+    //     height:48px;
+    //      width:48px;
+    //     left: 0;
+    // }
+    // .menu{
+    //     height: 100vh;
+    //     width: 100vw;
+    //     background: rgb(85, 163, 211);
+    //     position: relative;
+    //     z-index: 10;
+    //     display: none;
+    //     .backButton{
+    //         height:48px;
+    //          width:48px ;
+    //     }
+    // }
+
+    .name {
+        color: red;
+        align-self: center;
+        font-size: 40px;
+        font-family: forte;
+        text-shadow: 0 0 10px black;
+    }
+    .home {
+        height: 90vh;
+        width: 80vw;
+        background: rgba(245, 222, 179, 0.363);
+        transform-style: preserve-3d;
+        transform: translateZ(-5px) scale(1.43);
+        z-index: -1;
+    }
+    .about {
+        height: 90vh;
+        width: 80vw;
+        background: rgba(156, 77, 24, 0.233);
+        display: flex;
+        justify-content: center;
+        .profilePicture {
+            height: 200px;
+            width: 200px;
+            background: rgba(156, 77, 24, 0.363);
+            position: absolute;
+            border-radius: 50%;
+        }
+    }
+}
